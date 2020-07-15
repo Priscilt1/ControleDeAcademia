@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #7159c1;
+    --secondary-color: #f7df1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    /* para levar o conteudo ate a borda e ficar realmente centralizado (box model arrumando o padding) */
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 22px;
+}
+
+/* para a margem ficar apenas no sgundo item do menu que no caso é membro  */
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+/* essa classe active ser para quando estiver no menu selecionado (diferente do hover que é só quando deixa o mouse em cima) precisa criar a classe no html  */
+.links a.active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.links a:hover {
+    color: var(--primary-color);
+}
+
+.links a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4;
+}
+
+.links a:hover::after {
+    transition: width 200ms ease-in-out;
+    width: 100%;
+}
+
+
+/* == CARD === */
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    /* o auto para alinhar ao meio */
+    margin: 45px auto;
+    /* grid dividido ao meio  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* eixo y, eixo x, borrado, espalhamento  */
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+    /* para a imagem aparecer de forma mais suave e estilizada, toda animação precisa de um nome */
+    /* efeito de transicao */
+    animation-name: up 200ms ease-out;
+}
+
+/* animação  */
+@keyframes up {
+    /* 0% onde vai começar */
+    from {
+        opacity: 0;
+        /* o transform ainda nao pega em todos os navegadores. Da um efeito de baixo para cima */
+        transform: translateY(15px) ;
+    }
+    /* 100% onde vai terminar, lembrando que pode ter outro estado quando ela passar nos 30% por exemplo  */
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*== DETAILS ==*/
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+/* para tirar a linha do ultimo filho, elemento  */
+.details .item:last-child {
+    border: none;
+}
+
+/* para pegar a primeira div de cada sessao e o h3 */
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    /* para separar a linha entre os elementos */
+    line-height: 24px;
+    color: #777;
+    /* espacamento entre as letras */
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+/* para pegar a segunda div de cada sessao */
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3 {
+    /* o uppercase para ficar em caixa alta */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color)
+}
+
+/* para ter consitencia no layout usa a regra do 8, exemplo 8x8 x8/2... */
+/* .details .item div:nth-child(2) span ou */
+.details .item span {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+    /* o display:  inline-block aceita o margin top  */
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}

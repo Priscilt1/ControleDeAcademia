@@ -1,0 +1,31 @@
+<html>
+    <head>
+        {% block head%}
+             <title> Gym Manager</title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/styles.css">
+
+    </head>
+
+
+    <body>
+        <div class="fundo">
+        <header>
+            <div class="links">
+                <a href="/" class="active">Instructors</a>
+                <a href="/members">Members</a>
+                {% for link in links %}
+                    <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+                {% endfor %}
+
+            </div>
+            
+        </header>
+
+        <!-- parte dinamica, puxa o about -->
+        {% block content %}
+        {% endblock%}
+
+    </body>
+</html>
