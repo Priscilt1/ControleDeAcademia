@@ -154,3 +154,35 @@ header {
     text-transform: uppercase;
     font-size: 12px;
 }
+
+/*== form ==*/
+input {
+    width: 100%;
+    /* linha ao redor da caixa */
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* o radio é o componente que tem o background amarelo */
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+/* as legendas que ficam dentro das caixas */
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}

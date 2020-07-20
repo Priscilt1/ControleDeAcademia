@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "priscila ribeiro",
+      "avatar_url": "http:/google.com",
+      "birth": 949449600000,
+      "created_at": 1595249047932,
+      "gender": "M",
+      "services": "musculacao"
+    },
+    {
+      "id": 2,
+      "name": "eduardo ",
+      "avatar_url": "http://google.com",
+      "birth": 389232000000,
+      "created_at": 1595249197045,
+      "gender": "M",
+      "services": "abraços quentinhos "
+    }
+  ]
+}
