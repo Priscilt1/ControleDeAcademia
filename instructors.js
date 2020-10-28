@@ -1,50 +1,62 @@
-// arquivo responsavel por exportar funcoes
-
-
-// guardando os dados
 const fs = require('fs')
 const data = require("./data.json")
+const { age } = require('./utils')
+
+//show
+exports.show = function (req, res) {
+    // req.params
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function (instructor) {
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) return res.send("Instrutor não encontrado!")
 
 
+    const instructor = {
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        // o split serve para pegar uma string e transformar em um array
+        services: foundInstructor.services.split(","),
+        // formatacao da data
+        created_at: new Intl.DateTimeFormat('pt-br').format(foundInstructor.created_at),
+    }
 
-// Create
-// estrutura de validacao 
-exports.post =  function (req, res) {
+    return res.render("instructors/show", { instructor })
+}
+//create
+exports.post = function (req, res) {
     const keys = Object.keys(req.body)
-    for(key of keys) {
+    for (key of keys) {
         if (req.body[key] == "") {
-            return res.send ('Por favor, preencha todos os campos!')
+            return res.send('Por favor, preencha todos os campos!')
         }
     }
 
-// destruturando o req.body
-let {avatar_url, birth, name, services, gender} = req.body
+    let { avatar_url, birth, name, services, gender } = req.body
 
 
-// configuração para a data de aniversario na entrada de dados 
-birth = Date.parse (birth)
-const created_at = Date.now()
-const id = Number(data.instructors.length + 1)
+    birth = Date.parse(birth)
+    const created_at = Date.now()
+    const id = Number(data.instructors.length + 1)
 
 
-data.instructors.push({
-    id,
-    name,
-    avatar_url,
-    birth,
-    created_at,
-    gender,
-    services
-})
+    data.instructors.push({
+        id,
+        name,
+        avatar_url,
+        birth,
+        created_at,
+        gender,
+        services
+    })
 
-// writeFile = escrever o arquivo 
-// callback function serve para nao bloquear o seu app enquanto faz uma leitura de dados, função executada depois de certo tempo
-// null, 2 formatacao para a melhor visualizacao dos objetivos no data.json
-fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
-    if (err) return res.send ("Erro na gravação!")
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+        if (err) return res.send("Erro na gravação!")
 
-    return res.redirect("/instructors")
-})
+        return res.redirect("/instructors")
+    })
 
     // return res.send(req.body)
 }

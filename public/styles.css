@@ -136,7 +136,7 @@ header {
     /* o uppercase para ficar em caixa alta */
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 /* para ter consitencia no layout usa a regra do 8, exemplo 8x8 x8/2... */
