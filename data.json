@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "eduardo ",
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://source.unsplash.com/collection/9419482/500x500",
       "birth": 389232000000,
       "created_at": 1595249197045,
       "gender": "M",
@@ -20,8 +20,8 @@
     },
     {
       "id": 3,
-      "name": "teste",
-      "avatar_url": "http:/google.com",
+      "name": "Hulk - O mostro",
+      "avatar_url": "https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/123316353_3133623923416249_3838335033037558532_o.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=Lp4vmmxBEO0AX9J6BAq&_nc_ht=scontent-gru2-1.xx&oh=ecc2e83890e0eec5b5089dd1f2c00757&oe=5FC19670",
       "birth": 587088000000,
       "created_at": 1595253060930,
       "gender": "M",
@@ -62,6 +62,15 @@
       "created_at": 1595254195180,
       "gender": "M",
       "services": "lambeijos"
+    },
+    {
+      "id": 8,
+      "name": "priscila ribeiro",
+      "avatar_url": "http://google.com",
+      "birth": 952128000000,
+      "created_at": 1603915193687,
+      "gender": "F",
+      "services": "sdsds,dsdsds"
     }
   ]
 }

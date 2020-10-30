@@ -1,6 +1,8 @@
 const fs = require('fs')
 const data = require("./data.json")
 const { age } = require('./utils')
+const Intl = require('intl')
+
 
 //show
 exports.show = function (req, res) {
@@ -19,8 +21,8 @@ exports.show = function (req, res) {
         age: age(foundInstructor.birth),
         // o split serve para pegar uma string e transformar em um array
         services: foundInstructor.services.split(","),
-        // formatacao da data
-        created_at: new Intl.DateTimeFormat('pt-br').format(foundInstructor.created_at),
+        // formatacao da data - tive que instalar o intl no npm e importar ele no arquivo para resolver o bug
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at),
     }
 
     return res.render("instructors/show", { instructor })
