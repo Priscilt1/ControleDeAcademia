@@ -1,0 +1,41 @@
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input type="url" name="avatar_url" placeholder="http://">
+    </div>
+</div>
+
+<div class="item">
+    <div>Instrutor</div>
+    <div>
+        <input type="text" name="name" placeholder="Nome do Instrutor">
+    </div>
+</div>
+
+<div class="item">
+    <div>Data de nascimento</div>
+    <div>
+        <input type="date" name="birth">
+    </div>
+</div>
+
+<div class="item">
+    <div>Sexo</div>
+    <div>
+        {# o checked torna a selecao obrigatoria #}
+        <span><input type="radio" name="gender" value="M" checked="checked">
+            Masculino</span>
+        <span><input type="radio" name="gender" value="F">
+            Feminino</span>
+    </div>
+</div>
+
+<div class="item">
+    <div>Área de atuação</div>
+    <div>
+        <input type="text" name="services" placeholder="Separe os serviços prestados por vírgula">
+    </div>
+</div>
+
+{# o submit é para enviar para o servidor  #}
+<button type="submit">Salvar</button>
