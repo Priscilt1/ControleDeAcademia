@@ -15,7 +15,6 @@ exports.show = function (req, res) {
 
     if (!foundInstructor) return res.send("Instrutor não encontrado!")
 
-
     const instructor = {
         ...foundInstructor,
         age: age(foundInstructor.birth),
@@ -27,6 +26,7 @@ exports.show = function (req, res) {
 
     return res.render("instructors/show", { instructor })
 }
+
 //create
 exports.post = function (req, res) {
     const keys = Object.keys(req.body)
@@ -61,4 +61,17 @@ exports.post = function (req, res) {
     })
 
     // return res.send(req.body)
+}
+
+//edit - Mostrando os dados no front-end para a edição
+exports.edit = function(req,res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function (instructor) {
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) return res.send("Instrutor não encontrado!")
+
+    return res.render('instructors/edit', { instructor: foundInstructor })
 }

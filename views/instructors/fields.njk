@@ -1,21 +1,32 @@
 <div class="item">
     <div>Avatar URL</div>
     <div>
-        <input type="url" name="avatar_url" placeholder="http://">
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder="http://" 
+            value="{{ instructor.avatar_url }}">
     </div>
 </div>
 
 <div class="item">
     <div>Instrutor</div>
     <div>
-        <input type="text" name="name" placeholder="Nome do Instrutor">
+        <input 
+            type="text" 
+            name="name" 
+            placeholder="Nome do Instrutor" 
+            value="{{ instructor.name }}">
     </div>
 </div>
 
 <div class="item">
     <div>Data de nascimento</div>
     <div>
-        <input type="date" name="birth">
+        <input 
+            type="date" 
+            ame="birth" 
+            value="{{ instructor.bith }}">
     </div>
 </div>
 
@@ -23,17 +34,36 @@
     <div>Sexo</div>
     <div>
         {# o checked torna a selecao obrigatoria #}
-        <span><input type="radio" name="gender" value="M" checked="checked">
-            Masculino</span>
-        <span><input type="radio" name="gender" value="F">
-            Feminino</span>
+        <span>
+            <input 
+                type="radio" 
+                name="gender" 
+                value="M" 
+                {% if instructor.gender == 'M'%} 
+                    checked=
+                {% endif %}> Masculino
+        </span>
+        <span>
+            <input 
+                type="radio" 
+                name="gender" 
+                value="F"
+                {% if instructor.gender == 'F'%} 
+                    checked=    
+                {% endif %}> Feminino
+        </span>
     </div>
 </div>
 
 <div class="item">
     <div>Área de atuação</div>
     <div>
-        <input type="text" name="services" placeholder="Separe os serviços prestados por vírgula">
+        <input 
+            type="text" 
+            name="services" 
+            placeholder="Separe os serviços prestados por vírgula"
+            value="{{ instructor.services }}"
+        >
     </div>
 </div>
 
