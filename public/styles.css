@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color: #7159c1;
+    --primary-color: #7057c1;
     --secondary-color: #f7df1e;
 }
 
@@ -178,7 +178,8 @@ input::placeholder {
     font-weight: normal;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     padding: 8px 32px;
     background-color: var(--primary-color);
     border-radius: 4px;
@@ -186,4 +187,17 @@ button[type="submit"] {
     width: 100%;
     color: white;
     font-size: 16px;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    transition: 300ms;
 }
