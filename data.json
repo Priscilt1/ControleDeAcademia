@@ -28,24 +28,6 @@
       "birth": 1474848000000
     },
     {
-      "id": 4,
-      "name": "teste",
-      "avatar_url": "http:/google.com",
-      "birth": 587088000000,
-      "created_at": 1595253089743,
-      "gender": "M",
-      "services": "musculacao"
-    },
-    {
-      "id": 5,
-      "name": "dfddd",
-      "avatar_url": "http://google.com",
-      "birth": 389232000000,
-      "created_at": 1595253648365,
-      "gender": "M",
-      "services": "musculacao"
-    },
-    {
       "id": 6,
       "name": "ptrixis",
       "avatar_url": "http://google.com",

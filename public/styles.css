@@ -196,8 +196,15 @@ a.button {
     text-decoration: none;
 }
 
-a.button:hover {
-    cursor: pointer;
-    font-weight: bold;
-    transition: 300ms;
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color:lightcoral;
 }
+
+#form-delete button[type="submit"]:hover,
+button[type="submit"]:hover {
+    cursor: pointer;
+    transition: 300ms;
+    text-decoration: underline;
+}
+
