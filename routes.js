@@ -18,12 +18,18 @@ routes.get('/instructors/:id', instructors.show)
 
 routes.get('/instructors/:id/edit', instructors.edit)
 
-
 routes.post("/instructors", instructors.post)
+
+routes.put("/instructors", instructors.put)
 
 routes.get ('/members', function (req, res) {
     return res.send("members")
 })
 
-
 module.exports = routes
+
+// http verbs
+// get: receber RESOURCE
+// post: criar um novo resource com dados enviados 
+// put: atualizar resource
+// delete: deletar resource
