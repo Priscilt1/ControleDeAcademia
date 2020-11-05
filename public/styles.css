@@ -234,3 +234,21 @@ th {
 tbody tr:last-child td {
     border-bottom: none;
 }
+
+/* configurando imagem de avatar na tabela */
+/* :first-child primero filho */
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
+}

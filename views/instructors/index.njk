@@ -17,7 +17,8 @@
             {% for instructor in instructors %}
                 <tr>
                     {# coluna é a <td> #}
-                    <td> {{instructor.name}}</td>                                
+                    <td><span style="background-image: url({{instructor.avatar_url}})"></span>
+                        {{instructor.name}}</td>                                
                     <td> {{instructor.services}} </td>
                     <td> <a href="/instructors/{{instructor.id}}">Ver detalhes</a> </td>
                 </tr>
