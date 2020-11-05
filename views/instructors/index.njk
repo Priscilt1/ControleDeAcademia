@@ -3,6 +3,30 @@
 
 {% block content %}
 <div class="card">
+    <table> {# tabela #}
+        <thead> {# thead - cabeçalho #}
+            <tr> {# linha é a <tr> #}
+                {# coluna é a <th> #}
+                <th>Instructor</th>
+                <th>Atendimento</th>
+            </tr>
+        </thead>
+
+        <tbody> {# corpo da tabela #}
+            {% for instructor in instructors %}
+                <tr>
+                    {# coluna é a <td> #}
+                    <td> {{instructor.name}}</td>                                
+                    <td> {{instructor.services}} </td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+
+
+</div>
+{% endblock content %}
+
 
     <section class="avatar" 
     style="background: url(https://source.unsplash.com/collection/9419482/500x500) no-repeat center center / cover">
@@ -42,6 +66,3 @@
         </div>
 
     </section>
-
-</div>
-{% endblock content %}
