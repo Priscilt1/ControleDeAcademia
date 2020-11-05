@@ -18,8 +18,11 @@
                 <tr>
                     {# coluna é a <td> #}
                     <td><span style="background-image: url({{instructor.avatar_url}})"></span>
-                        {{instructor.name}}</td>                                
-                    <td> {{instructor.services}} </td>
+                        {{instructor.name}}</td>   
+                        <td> 
+                            {% for service in instructor.services.split(",")%} 
+                            <div id="td-services">{{service}} </div>  
+                            {% endfor %} </td>                            
                     <td> <a href="/instructors/{{instructor.id}}">Ver detalhes</a> </td>
                 </tr>
             {% endfor%}
@@ -31,41 +34,3 @@
 {% endblock content %}
 
 
-    {# <section class="avatar" 
-    style="background: url(https://source.unsplash.com/collection/9419482/500x500) no-repeat center center / cover">
-
-    </section>
-
-    <section class="details">
-
-        <h3>Detalhes</h3>
-
-        <div class="item">
-            <div>Instrutor</div>
-            <div>Guilherme Saraiva</div>
-        </div>
-
-        <div class="item">
-            <div>Idade</div>
-            <div>25</div>
-        </div>
-
-        <div class="item">
-            <div>Sexo</div>
-            <div>Masculino</div>
-        </div>
-
-        <div class="item">
-            <div>Acompanhamento</div>
-            <div>
-                <span>Musculação</span>
-                <span>Crossfit</span>
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Desde</div>
-            <div>26/09/2016</div>
-        </div>
-
-    </section> #}

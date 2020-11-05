@@ -133,7 +133,6 @@ header {
 }
 
 .details h3 {
-    /* o uppercase para ficar em caixa alta */
     text-transform: uppercase;
     font-weight: bold;
     color: var(--primary-color);
@@ -202,7 +201,8 @@ a.button {
 }
 
 #form-delete button[type="submit"]:hover,
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+tbody tr td:last-child a:hover {
     cursor: pointer;
     transition: 300ms;
     text-decoration: underline;
@@ -231,6 +231,12 @@ th {
     border-bottom: 1px solid #d9d9d9;
 }
 
+th {
+    text-transform: uppercase;
+    color: #777;
+    font-size: 14px;
+}
+
 tbody tr:last-child td {
     border-bottom: none;
 }
@@ -251,4 +257,31 @@ tbody tr td:first-child span {
     border-radius: 50%;
     box-shadow: 3px 1px 6px -4px black;
     border: 2px solid white;
+}
+
+tbody tr td:last-child a {
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.table-container thead tr th:last-child,
+td:last-child {
+    text-align: center;
+}
+
+tbody #td-services {
+    background: var(--secondary-color);
+    border-radius: 16px;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
 }
