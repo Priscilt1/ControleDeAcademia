@@ -47,21 +47,12 @@
     },
     {
       "id": 8,
-      "name": "priscila ribeiro",
+      "name": "Priscila Ribeiro",
       "avatar_url": "http://google.com",
       "birth": 952128000000,
       "created_at": 1603915193687,
       "gender": "F",
       "services": "sdsds,dsdsds"
-    },
-    {
-      "id": 9,
-      "name": "Hulk - O mostro",
-      "avatar_url": "https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/123316353_3133623923416249_3838335033037558532_o.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=Lp4vmmxBEO0AX9J6BAq&_nc_ht=scontent-gru2-1.xx&oh=ecc2e83890e0eec5b5089dd1f2c00757&oe=5FC19670",
-      "birth": null,
-      "created_at": 1604513850872,
-      "gender": "M",
-      "services": "musculacao"
     }
   ]
 }

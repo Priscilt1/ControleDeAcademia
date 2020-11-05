@@ -208,3 +208,29 @@ button[type="submit"]:hover {
     text-decoration: underline;
 }
 
+/* tabelas - index instructors */
+.table-container {
+    display: block;
+    padding: 40px;
+    /* para respeitar a largura da caixa mesmo com o padding */
+    box-sizing: border-box;
+}
+
+.table-container table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table-container thead tr th {
+    text-align: left;
+}
+
+td, 
+th {
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
