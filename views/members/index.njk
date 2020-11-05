@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+<div class="card table-container">
+    <table> {# tabela #}
+        <thead> {# thead - cabeçalho #}
+            <tr> {# linha é a <tr> #}
+                {# coluna é a <th> #}
+                <th>Instructor</th>
+                <th>Atendimento</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+
+        <tbody> {# corpo da tabela #}
+            {% for instructor in instructors %}
+                <tr>
+                    {# coluna é a <td> #}
+                    <td><span style="background-image: url({{instructor.avatar_url}})"></span>
+                        {{instructor.name}}</td>   
+                        <td> 
+                            {% for service in instructor.services.split(",")%} 
+                            <div id="td-services">{{service}} </div>  
+                            {% endfor %} </td>                            
+                    <td> <a href="/instructors/{{instructor.id}}">Ver detalhes</a> </td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+
+
+</div>
+{% endblock content %}
+
+
