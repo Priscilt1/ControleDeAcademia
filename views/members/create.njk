@@ -3,15 +3,15 @@
 {% block content %}
 
 {# o post é o metodo de formulario e o action é onde ele ficara, no caso é a pasta de intrutor  #}
-<form class="card" method="POST" action="/instructors">
+<form class="card" method="POST" action="/members">
 
     <section class="avatar" 
     style="background: url(https://source.unsplash.com/collection/9419482/500x500) no-repeat center center / cover">
     </section>
 
     <section class="details">
-        <h3>Novo Instrutor</h3>
-        {% include 'instructors/fields.njk'%}
+        <h3>Novo Membro</h3>
+        {% include 'members/fields.njk'%}
 
     </section>
 </form>
