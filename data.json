@@ -1,5 +1,28 @@
 {
-  "members":[],
+  "members": [
+    {
+      "avatar_url": "http://dsdsdsgle.com",
+      "name": "Lar do amor",
+      "email": "goldblade@gmail.com",
+      "birth": 976579200000,
+      "gender": "M",
+      "blood": "A1",
+      "weight": "1",
+      "height": "1",
+      "id": 1
+    },
+    {
+      "avatar_url": "http:/google.com",
+      "name": "servidor desgracary",
+      "email": "mefode@gmail.com",
+      "birth": -30607459200000,
+      "gender": "M",
+      "blood": "A1",
+      "weight": "666",
+      "height": "6969",
+      "id": 2
+    }
+  ],
   "instructors": [
     {
       "id": 1,
