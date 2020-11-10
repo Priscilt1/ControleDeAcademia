@@ -21,17 +21,6 @@
       "blood": "A1",
       "weight": "65",
       "height": "165"
-    },
-    {
-      "id": 4,
-      "avatar_url": "http://dsdsdsgle.com",
-      "name": "priscila ribeiro",
-      "email": "goldblade@gmail.com",
-      "birth": 968457600000,
-      "gender": "M",
-      "blood": "A+",
-      "weight": "190",
-      "height": "89"
     }
   ],
   "instructors": [
@@ -61,15 +50,6 @@
       "gender": "M",
       "services": "Lambeijo",
       "birth": 1474848000000
-    },
-    {
-      "id": 6,
-      "name": "Namaste",
-      "avatar_url": "https://images.unsplash.com/photo-1508050249562-b28a87434496?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-      "birth": 389232000000,
-      "created_at": 1595253728323,
-      "gender": "M",
-      "services": "Yoga, meditação"
     },
     {
       "id": 8,
