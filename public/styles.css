@@ -155,7 +155,7 @@ header {
 }
 
 /*== form ==*/
-input {
+input, select {
     width: 100%;
     /* linha ao redor da caixa */
     outline: none;
