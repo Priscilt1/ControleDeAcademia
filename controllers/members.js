@@ -4,7 +4,13 @@ const { date } = require('../utils')
 const Intl = require('intl')
 
 exports.index = function (req, res) {
-    return res.render("members/index", {members: data.members})
+    const members = data.members.map(member => {
+        return { 
+            ...member,
+            birth: date(member.birth).birthDay
+        }
+    })
+    return res.render("members/index", {members: members})
 }
 
 exports.create = function (req, res) {
