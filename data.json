@@ -1,17 +1,6 @@
 {
   "members": [
     {
-      "avatar_url": "http://dsdsdsgle.com",
-      "name": "Lar do amor",
-      "email": "goldblade@gmail.com",
-      "birth": 976579200000,
-      "gender": "M",
-      "blood": "A1",
-      "weight": "1",
-      "height": "1",
-      "id": 1
-    },
-    {
       "avatar_url": "http:/google.com",
       "name": "servidor desgracary",
       "email": "mefode@gmail.com",
@@ -21,6 +10,28 @@
       "weight": "666",
       "height": "6969",
       "id": 2
+    },
+    {
+      "id": 3,
+      "avatar_url": "http:/google.com",
+      "name": "priscila ribeiro",
+      "email": "priscilt.ribeiro@hotmail.com",
+      "birth": 7982150400000,
+      "gender": "F",
+      "blood": "A1",
+      "weight": "65",
+      "height": "165"
+    },
+    {
+      "id": 4,
+      "avatar_url": "http://dsdsdsgle.com",
+      "name": "priscila ribeiro",
+      "email": "goldblade@gmail.com",
+      "birth": 968457600000,
+      "gender": "M",
+      "blood": "B-",
+      "weight": "90",
+      "height": "89"
     }
   ],
   "instructors": [
