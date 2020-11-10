@@ -8,23 +8,26 @@
         <thead> {# thead - cabeçalho #}
             <tr> {# linha é a <tr> #}
                 {# coluna é a <th> #}
-                <th>Instructor</th>
-                <th>Atendimento</th>
+                <th>Membro</th>
+                <th>Email</th>
+                <th>Peso</th>
+                <th>Altura</th>
                 <th>Ação</th>
+
             </tr>
         </thead>
 
         <tbody> {# corpo da tabela #}
-            {% for instructor in instructors %}
+            {% for member in members %}
                 <tr>
                     {# coluna é a <td> #}
-                    <td><span style="background-image: url({{instructor.avatar_url}})"></span>
-                        {{instructor.name}}</td>   
-                        <td> 
-                            {% for service in instructor.services.split(",")%} 
-                            <div id="td-services">{{service}} </div>  
-                            {% endfor %} </td>                            
-                    <td> <a href="/instructors/{{instructor.id}}">Ver detalhes</a> </td>
+                    <td><span style="background-image: url({{member.avatar_url}})"></span>
+                        {{member.name}}</td>   
+                    <td>{{member.email}}</td>                           
+                    <td>{{member.weight}}kg</td>                           
+                    <td>{{member.height}}cm</td>                           
+
+                    <td> <a href="/members/{{member.id}}">Ver detalhes</a> </td>
                 </tr>
             {% endfor%}
         </tbody>
