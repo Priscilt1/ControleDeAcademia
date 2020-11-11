@@ -35,6 +35,6 @@ Página - Novo membro 🚀
 Página - Detalhes do membro 🚀
 <img src="https://scontent-gru1-1.xx.fbcdn.net/v/t1.15752-9/124886288_742057406397449_1714095710866996558_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=aMiMCO1xQg0AX8-sVuy&_nc_ht=scontent-gru1-1.xx&oh=80c53c291923debf43e278233a4ed374&oe=5FD043B2" style="width: 30%">
 
-Página - Editar do membro 🚀
+Página - Editar membro 🚀
 <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.15752-9/124556658_640573743304115_4314081360392966379_n.png?_nc_cat=107&ccb=2&_nc_sid=ae9488&_nc_ohc=r5oICB4wLroAX960HG6&_nc_ht=scontent-gru2-1.xx&oh=26aca5a871c48878c0ffb1ed0ca8c398&oe=5FD219E9" style="width: 30%">
 
