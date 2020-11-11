@@ -1,5 +1,15 @@
-# ControleDeAcademia
-
+# Controle de Academia
+Projeto proposto na etapa 3 no launchbase da Rocketseat onde trabalhamos com:
+• Cadastro através de formulário;
+• Lógica para idade ;
+• Listagem, apresentação, edição e exclusão de dados;
+• Recebimento de dados pelo o front-end;
+• Validação de dados no back-end;
+• Trabalhando dados no JSON;
+• Formatando datas no Intl;
+• Verbos HTTP;
+• Lógica de menu ativo;
+• ...
 
 # Página - Instrutores 🚀
 <img src="https://scontent-gru1-1.xx.fbcdn.net/v/t1.15752-9/124837059_3597691446940830_170812028226994227_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=It1E3C9JXSIAX-I3ntq&_nc_ht=scontent-gru1-1.xx&oh=6f1a7a63dc4b32fee3a09a05c67e0e23&oe=5FD22FA8" style="width: 50%">
